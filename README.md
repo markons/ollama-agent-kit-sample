@@ -67,6 +67,12 @@ saveHistory()  ──▶ history.json (so the next invocation remembers this one
    
    (Override either script's model at runtime with `OLLAMA_MODEL=<name>` — see
    "Design decisions" below for why they default to different models.)
+
+   No access to `registry.ollama.ai` (e.g. a locked-down corporate network
+   that only allows `github.com`)? Install `qwen3:8b` from this repo's
+   [offline install bundle](../../releases/tag/qwen3-8b-offline) instead —
+   same weights, split into GitHub-Release-sized parts with a ready-made
+   `Modelfile`.
 3. Install dependencies:
    
    ```
