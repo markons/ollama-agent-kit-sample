@@ -73,7 +73,17 @@ saveHistory()  ──▶ history.json (so the next invocation remembers this one
    [offline install bundle](../../releases/tag/qwen3-8b-offline) instead —
    same weights, split into GitHub-Release-sized parts with a ready-made
    `Modelfile`.
-3. Install dependencies:
+3. Optional — `nomic-embed-text`, an embedding model (not currently used by
+   either script, pulled here for future embedding-based work):
+
+   ```
+   ollama pull nomic-embed-text
+   ```
+
+   Same offline path applies: [offline install bundle](../../releases/tag/nomic-embed-text-offline)
+   — a single ~274MB `.gguf` (under GitHub's 2GB-per-asset limit, so no
+   splitting needed) plus a ready-made `Modelfile`.
+4. Install dependencies:
    
    ```
    npm install
